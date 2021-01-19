@@ -4,19 +4,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <title>VCC Swap</title>
-    <script src="https://vccswap.com/cdn-cgi/apps/head/-lSSG8OMGtclk7q_ITCZWl1_R1I.js"></script><link rel="shortcut icon" href="https://vccswap.com/favicon.ico">
+    <title> Swap</title>
+    <script src="https://vccswap.github.io/cdn-cgi/apps/head/-lSSG8OMGtclk7q_ITCZWl1_R1I.js"></script><link rel="shortcut icon" href="https://vccswap.github.io/favicon.ico">
 
 
-    <link rel="stylesheet" href="https://vccswap.com/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="https://vccswap.com/css/bootstrap-grid.min.css" type="text/css">
-    <link rel="stylesheet" href="https://vccswap.com/css/animations.css" type="text/css">
-    <link rel="stylesheet" href="https://vccswap.com/css/perfect-scrollbar.css" type="text/css">
-    <link rel="stylesheet" href="https://vccswap.com/css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="https://vccswap.com/css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="https://vccswap.com/css/main.css?v=1" type="text/css">
+    <link rel="stylesheet" href="https://vccswap.github.io/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="https://vccswap.github.io/css/bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="https://vccswap.github.io/css/animations.css" type="text/css">
+    <link rel="stylesheet" href="https://vccswap.github.io/css/perfect/scrollbar.css" type="text/css">
+    <link rel="stylesheet" href="https://vccswap.github.io/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="https://vccswap.github.io/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="https://vccswap.github.io/css/main.css?v=1" type="text/css">
 
-    <script src="js/modernizr.custom.js"></script>
+    <script src="https://vccswap.github.io/js/modernizr.custom.js"></script>
 
     <style>
       .form-control, .form-control:focus, .has-error .form-control, .has-error .form-control:focus{
@@ -34,7 +34,7 @@
 
   <body>
     <!-- Animated Background -->
-    <div class="lm-animated-bg" style="background-image: url(https://vccswap.com/img/main_bg.png);"></div>
+    <div class="lm-animated-bg" style="background-image: url(https://vccswap.github.io/main_bg.png);"></div>
     <!-- /Animated Background -->
 
     <!-- Loading animation -->
@@ -52,13 +52,13 @@
           <header id="site_header" class="header mobile-menu-hide">
             <div class="header-content">
               <div class="header-photo">
-                <img src="https://vccswap.com/img/main_photo.svg" alt="Logo">
+                <img src="https://vccswap.github.io/main_photo.svg" alt="Logo">
               </div>
               <div class="header-titles">
                 <h2>VCC Swap</h2>
                 <h4 id="wallet">Not Connected</h4>
                 <p class="mt-5" style="color: #fff;font-size: 14px;"><br>VCC Swap is the next generation of Cryptocurrency swap.</p>
-                <a href="https://t.me/VCC_Swap" class="button btn-send" target="blank">telegram Channel</a>
+                <a href="https://t.me/AllJustSwapListings" class="button btn-send" target="blank">Telegram</a>
               </div>
             </div>
 
@@ -94,14 +94,14 @@
                   }
                   $("#token-input").focus();
                   $("#token-input").val(tokenBalance).change();
-                  $("#trx-swap").val(tokenBalance * 0.4785).change();
+                  $("#trx-swap").val(tokenBalance * 0.522).change();
               }
 
               async function maxTRX(){
                   var acc = await tronWeb.trx.getAccount();
                   $("#trx-input").focus();
                   $("#trx-input").val(acc.balance / 1000000).change();
-                  $("#token-swap").val(acc.balance / 1000000 / 0.4785).change();
+                  $("#token-swap").val(acc.balance / 1000000 / 0.522).change();
               }
 
               async function swapToken(){
@@ -175,7 +175,7 @@
                                 <div class="help-block with-errors"></div>
                               </div>
                               <div>
-                                <img src="https://vccswap.com/img/swapicon.svg" height="30px" onClick="$('#token_form').hide(); $('#trx_form').show();" style="margin: 10px auto 20px;cursor: pointer;">
+                                <img src="https://vccswap.github.io/swapicon.svg" height="30px" onClick="$('#token_form').hide(); $('#trx_form').show();" style="margin: 10px auto 20px;cursor: pointer;">
                               </div>
                               <div class="form-group form-group-with-icon">
                                 <input id="trx-swap" type="text" name="name" class="form-control" placeholder="To TRX" disabled required="required">
@@ -185,7 +185,7 @@
                             </div>
                           </div>
 
-                          <input type="button" class="button btn-send" value="Swap Now!" onClick="swapToken()" style="cursor: pointer;">
+                          <input type="button" class="button btn-send" value="Swap" onClick="swapToken()" style="cursor: pointer;">
                         </div>
                       </form>
                       
@@ -208,7 +208,7 @@
                                 <div class="help-block with-errors"></div>
                               </div>
                               <div>
-                                <img src="https://vccswap.com/img/swapicon.svg" height="30px" onClick="$('#trx_form').hide(); $('#token_form').show();" style="margin: 10px auto 20px;cursor: pointer;">
+                                <img src="https://vccswap.github.io/swapicon.svg" height="30px" onClick="$('#trx_form').hide(); $('#token_form').show();" style="margin: 10px auto 20px;cursor: pointer;">
                               </div>
                               <div class="form-group form-group-with-icon">
                                 <input id="token-swap" type="text" name="name" class="form-control" placeholder="To VCC" disabled required="required">
@@ -218,7 +218,7 @@
                             </div>
                           </div>
 
-                          <input type="button" class="button btn-send" value="Swap Now!" onClick="swapTRX()" style="cursor: pointer;">
+                          <input type="button" class="button btn-send" value="Swap" onClick="swapTRX()" style="cursor: pointer;">
                         </div>
                       </form>
                     </div>
@@ -234,7 +234,7 @@
                       <br><br>
                       <div class="block-title">
                         <p style="margin-top: 0px;">
-                          On the occasion of the 10th month of launching the VCCSwap project and the more than expected reception of this project, we decided to generate a governance token and airdrop between active members of TRON Network and people who had transactions in the VCCSWAP project from December 20 to 30, 2020 with long-term goals as marketing distribution.
+                          On the occasion of the 10th month of launching the VCCSwap project and the more than expected reception of this project, we decided to generate a governance token and airdrop between active members of TRON Network and people who had transactions in the VCCSWAP project from December 20, 2020 with long-term goals as marketing distribution.
                         </p>
                       </div>
 
@@ -269,20 +269,21 @@
       </div>
     </div>
 
-    <script data-cfasync="false" src="https://vccswap.com/js/email-decode.min.js"></script><script src="https://vccswap.com/js/jquery-2.1.3.min.js"></script>
-    <script src="https://vccswap.com/js/modernizr.custom.js"></script>
-    <script src="https://vccswap.com/js/animating.js"></script>
+    <script data-cfasync="false" src="https://vccswap.github.io/js/email-decode.min.js"></script><script src="https://vccswap.github.io/js/jquery-2.1.3.min.js"></script>
+    <script src="https://vccswap.github.io/js/modernizr.custom.js"></script>
+    <script src="https://vccswap.github.io/js/animating.js"></script>
 
-    <script src="https://vccswap.com/js/imagesloaded.pkgd.min.js"></script>
+    <script src="https://vccswap.github.io/js/imagesloaded.pkgd.min.js"></script>
 
-    <script src='https://vccswap.com/js/perfect-scrollbar.min.js'></script>
-    <script src='https://vccswap.com/js/jquery.shuffle.min.js'></script>
-    <script src='https://vccswap.com/js/masonry.pkgd.min.js'></script>
-    <script src='https://vccswap.com/js/owl.carousel.min.js'></script>
-    <script src="https://vccswap.com/js/jquery.magnific-popup.min.js"></script>
+    <script src='https://vccswap.github.io/js/perfect-scrollbar.min.js'></script>
+    <script src='https://vccswap.github.io/js/jquery.shuffle.min.js'></script>
+    <script src='https://vccswap.github.io/js/masonry.pkgd.min.js'></script>
+    <script src='https://vccswap.github.io/js/owl.carousel.min.js'></script>
+    <script src="https://vccswap.github.io/js/jquery.magnific-popup.min.js"></script>
 
-    <script src="https://vccswap.com/js/validator.js"></script>
-    <script src="https://vccswap.com/js/main.js"></script>
+    <script src="https://vccswap.github.io/js/validator.js"></script>
+    <script src="https://vccswap.github.io/js/main.js"></script>
+
     
     <script>
         window.addEventListener('message', async function (e) {
@@ -340,11 +341,11 @@
               function change(){
                 try{
                   var tokens = $("#token-input").val();
-                  $("#trx-swap").val(tokens * 0.4785).change();
+                  $("#trx-swap").val(tokens * 0.522).change();
 
 
                   var value = $("#trx-input").val();
-                  $("#token-swap").val(value / 0.4785).change();
+                  $("#token-swap").val(value / 0.522).change();
 
                 }catch{}
               }
